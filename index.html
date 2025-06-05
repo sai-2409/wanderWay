@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedicap Tours</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/logotype first try.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <!-- Top bar for the website  -->
+    <!-- Top Info Bar -->
+    <div class="top__bar">
+        <div class="top__bar-left">
+            <span><i class="fas fa-phone-alt"></i> +1 213-662-2844</span>
+            <span>|</span>
+            <span><i class="fas fa-envelope"></i>samin.2409@gmail.com</span>
+        </div>
+        <div class="top__bar-right">
+            <a href=""><i class="fab fa-whatsapp"><img src="./img/whatsapp.png" alt="WhatsApp"></i></a>
+            <span>|</span>
+            <a href="https://www.tiktok.com/@one_wander_way?_t=ZT-8wwAELjbuaE&_r=1"><i class="fab fa-facebook-f"><img src="./img/tiktok.png" alt="TikTok"></i></a>
+            <span>|</span>
+            <a href="https://www.instagram.com/boyofcentralpark?igsh=OTdjemlkejBxcHp0&utm_source=qr"><i class="fab fa-instagram"><img src="./img/instagram.png" alt="Instagram"></i></a>
+        </div>
+    </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <img class="header__logo-image" src="./img/logotype first try.svg" alt="Logotype">
+      </div>
+      <nav class="header__nav" id="header__nav-id">
+        <a href="#home">Home</a>
+        <a href="#tours">Tours</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <img class="hero__main-bg" src="./img/central__park-main-b.jpg.avif" alt="Bg">
+    <h1 class="hero__title">“Lose yourself in the magic of every turn.”</h1>
+  </section>
+
+  <!-- Tours Section -->
+  <section class="tours" id="tours">
+    <h2 class="tours__title">Central Park <span>Guided Tours</span></h2>
+    <div class="tour__grid">
+      <div class="tour__card">
+        <img src="./img/pedicab__1-image.jpg" alt="Tour 1">
+        <h3>Basic Tour</h3>
+        <p class="tour__duration">30 min / 1 Stop</p>
+        <p class = "tour__card-price"><span>$35</span> per person</p>
+        <button class = "tour__card-button">Book Now</button>
+      </div>
+      <div class="tour__card">
+        <img src="./img/IMG_9266.JPG" alt="Tour 1">
+        <h3>Economy Tour</h3>
+        <p class="tour__duration">40 min / 2 Stops</p>
+        <p class = "tour__card-price"><span>$50</span> per person</p>
+        <button class = "tour__card-button">Book Now</button>
+      </div>
+      <div class="tour__card">
+        <img src="./img/IMG_9268.JPG" alt="Tour 1">
+        <h3>Classic Tour</h3>
+        <p class="tour__duration">50 min / 3 Stops</p>
+        <p class = "tour__card-price"><span>$65</span> per person</p>
+        <button class = "tour__card-button">Book Now</button>
+      </div>
+      <div class="tour__card">
+        <img src="./img/IMG_9267.webp" alt="Tour 1">
+        <h3>Deluxe Tour</h3>
+        <p class="tour__duration">60 min / 4 Stops</p>
+        <p class = "tour__card-price"><span>$75</span> per person</p>
+        <button class = "tour__card-button">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Welcome to Our Pedicab Tours</h2>
+      <!-- <p>We offer guided pedicap tours with friendly drivers and unforgettable city views.</p> -->
+      <div class="about__features">
+        <div>✅ Local Knowledge</div>
+        <div>✅ Comfortable Rides</div>
+        <div>✅ Personalized Experiences</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Section -->
+  <section class="explore">
+    <h2>Explore the City</h2>
+    <div class="video__block">
+      <iframe width="80%" height="600px" src="https://www.youtube.com/embed/nxK-ina9Jzg?si=UlEbTGFnR85TsAd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <!-- <button>▶</button> -->
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="review__section" id="reviews">
+        <h2 class="review__title">What <span>People Say About Us</span></h2>
+        <div class="review__rating">
+            <span>5.0</span>
+            <div class="stars">★★★★★</div>
+            <span>(1,326)</span>
+        </div>
+
+        <div id="reviewContainer" class="review__container">
+            <!-- Reviews will be loaded here -->
+        </div>
+
+        <button id="loadMoreBtn" class="review__load-button">Load More Reviews</button>
+    </section>
+
+  <!-- Contact/Booking Section -->
+  <!-- <section class="form__section">
+  <h2 class="form__title">Book a Tour</h2>
+  <form action="https://formsubmit.co/samin.2409@mail.ru" method="POST" class="form__container">
+
+    <input type="text" placeholder="Your Full Name" class="form__input" required>
+
+    <input type="tel" placeholder="Your Phone Number" class="form__input" required>
+
+    <input type="date" class="form__input form__date" required>
+
+    <input type="time" class="form__input" required>
+
+    <textarea placeholder="Special requests..." class="form__textarea"></textarea>
+
+    <button type="submit" class="form__button">Send Request</button>
+  </form>
+</section> -->
+
+    <section class="form__section" id="contact">
+        <h2 class="form__title">Book a Tour</h2>
+        <form action="https://formsubmit.co/sergg.2409@gmail.com" method="POST" class="form__container">
+            
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_subject" value="New Pedicab Booking Request">
+
+            <input type="text" name="Full Name" placeholder="Your Full Name" class="form__input" required>
+
+            <input type="tel" name="Phone Number" placeholder="Your Phone Number" class="form__input" required>
+
+            <input type="date" name="Tour Date" class="form__input form__date" required>
+
+            <input type="time" name="Tour Time" class="form__input" required>
+
+            <textarea name="Special Requests" placeholder="Special requests..." class="form__textarea"></textarea>
+
+            <button type="submit" class="form__button">Send Request</button>
+        </form>
+    </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 WanderWay. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
