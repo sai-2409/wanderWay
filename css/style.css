@@ -145,6 +145,49 @@ body {
   font-weight: bold;
   margin: 0;
 }
+/* Writing styles for the intro section */
+.intro {
+  background: linear-gradient(135deg, #eafbe6, #ffffff);
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 0;
+  border-top: 4px solid #006400;
+}
+
+.intro__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.intro__text {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.intro__button {
+  padding: 0.8rem 1.6rem;
+  background-color: #006400;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro__button:hover {
+  background-color: #004d00;
+  transform: scale(1.05);
+}
+
 .tours {
   background: white;
   padding: 60px 20px;

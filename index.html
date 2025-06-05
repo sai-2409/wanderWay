@@ -57,6 +57,22 @@
     <h1 class="hero__title">“Lose yourself in the magic of every turn.”</h1>
   </section>
 
+  <!-- Intro section coding -->
+   <section class="intro" id="intro">
+    <div class="intro__content">
+      <h2 class="intro__title">Discover Central Park with Us</h2>
+      <p class="intro__text">
+        At WanderWay, we don’t just offer rides — we create unforgettable moments in the heart of New York City.
+        Our guided Pedicab tours take you on a relaxing journey through the beauty and history of Central Park,
+        with four iconic stops every visitor should experience:
+        <strong>Bethesda Fountain</strong>, <strong>Conservatory Fountain</strong>,
+        <strong>the famous Home Alone 2 bridge</strong>, and the peaceful
+        <strong>John Lennon Memorial at Strawberry Fields</strong>.
+      </p>
+      <a href="#tours" class="intro__button">See Tours</a>
+    </div>
+  </section>
+
   <!-- Tours Section -->
   <section class="tours" id="tours">
     <h2 class="tours__title">Central Park <span>Guided Tours</span></h2>
@@ -65,6 +81,7 @@
         <img src="./img/pedicab__1-image.jpg" alt="Tour 1">
         <h3>Basic Tour</h3>
         <p class="tour__duration">30 min / 1 Stop</p>
+        <!-- <p class="tour__location">Betesta fountain</p> -->
         <p class = "tour__card-price"><span>$35</span> per person</p>
         <button class = "tour__card-button">Book Now</button>
       </div>
@@ -161,9 +178,9 @@
 
             <input type="tel" name="Phone Number" placeholder="Your Phone Number" class="form__input" required>
 
-            <input type="date" name="Tour Date" class="form__input form__date" required>
+            <input type="date" name="Tour Date" placeholder = "Choose your Date" class="form__input form__date" required>
 
-            <input type="time" name="Tour Time" class="form__input" required>
+            <input type="time" name="Tour Time" placeholder="Choose prefferred time" class="form__input" required>
 
             <textarea name="Special Requests" placeholder="Special requests..." class="form__textarea"></textarea>
 
