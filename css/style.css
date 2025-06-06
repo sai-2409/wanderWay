@@ -538,12 +538,34 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.1);
 }
+select.form__input {
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #cfe9cf;
+  font-size: 1rem;
+  background: #f8fff8;
+  color: #333;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+select.form__input:focus {
+  outline: none;
+  border-color: #006400;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.1);
+}
 
 .form__date::-webkit-calendar-picker-indicator {
   filter: invert(29%) sepia(94%) saturate(457%) hue-rotate(87deg) brightness(90%) contrast(90%);
   cursor: pointer;
 }
-
+.tour__Date{
+  text-align: start;
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: #ccc;
+}
 .form__textarea {
   height: 100px;
   resize: vertical;
