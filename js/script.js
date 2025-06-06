@@ -27,6 +27,37 @@ hamburger.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 
+// Writing JS code for the carusoul 
+const track = document.getElementById('carouselTrack');
+const prevBtn = document.querySelector('.carousel__btn--prev');
+const nextBtn = document.querySelector('.carousel__btn--next');
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel__item');
+const totalSlides = slides.length;
+
+function updateCarousel() {
+  const slideWidth = slides[0].clientWidth;
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateCarousel();
+});
+
+// Optional: Auto-slide every 6 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateCarousel();
+}, 6000);
+
+
 
 // Basic script for Pedicap
 document.addEventListener("DOMContentLoaded", function () {
