@@ -17,9 +17,9 @@
     <!-- Top Info Bar -->
     <div class="top__bar">
         <div class="top__bar-left">
-            <span><i class="fas fa-phone-alt"></i> +1 213-662-2844</span>
+            <span><i class="fas fa-phone-alt"></i>📲 +1 213-709-5924</span>
             <span>|</span>
-            <span><i class="fas fa-envelope"></i>samin.2409@gmail.com</span>
+            <span><i class="fas fa-envelope"></i>✉️ samin.2409@gmail.com</span>
         </div>
         <div class="top__bar-right">
             <a href=""><i class="fab fa-whatsapp"><img src="./img/whatsapp.png" alt="WhatsApp"></i></a>
@@ -195,6 +195,17 @@
             <input type="text" name="Full Name" placeholder="Your Full Name" class="form__input" required>
 
             <input type="tel" name="Phone Number" placeholder="Your Phone Number" class="form__input" required>
+
+            <!-- Tour Type Selector -->
+            <label for="tourType" class="tour__Date">Choose a Tour</label>
+            <select name="Tour Type" id="tourType" class="form__input tour__select" required>
+              <option value="">-- Select a Tour --</option>
+              <option title="30 min / 1 Stop • $35 (Bethesda Fountain)">Basic Tour</option>
+              <option title="40 min / 2 Stops • $50 (Bethesda Fountain, Friends Fountain)">Economy Tour</option>
+              <option title="50 min / 3 Stops • $65 (Add Home Alone Bridge)">Classic Tour</option>
+              <option title="60 min / 4 Stops • $75 (Full tour including John Lennon Memorial)">Deluxe Tour</option>
+            </select>
+            <input type="number" name="Number" placeholder="Number of Guests" class="form__input" required>
 
             <!-- Date (Calendar) -->
             <label class="tour__Date" for="tourDate">Choose a date</label>
