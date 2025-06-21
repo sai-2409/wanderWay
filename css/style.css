@@ -1,7 +1,7 @@
 /* Basic styles for Pedicap */
-html{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: Arial, sans-serif;
@@ -47,14 +47,14 @@ body {
 }
 /* Writing styles for the Top Bar */
 .top__bar {
-  background-color: white;
+  background-color: var(--secondary);
   color: green;
   padding: 0.4rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 0.9rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .top__bar-left span,
@@ -65,8 +65,8 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-.top__bar-right img{
-    width: 20px;
+.top__bar-right img {
+  width: 20px;
 }
 .top__bar-right i {
   font-size: 1rem;
@@ -96,8 +96,9 @@ body {
   font-weight: bold;
 }
 .header__logo-image {
-  width: 50%;
-  height: 50%;
+  width: 20%;
+  height: 20%;
+  margin: 10px 0;
 }
 .header__nav {
   display: flex;
@@ -114,6 +115,73 @@ body {
   opacity: 0.6;
 }
 
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+.hero__slider {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero__content {
+  color: #fff;
+  animation: fadeInHero 1.5s ease-in;
+}
+
+.hero__headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.hero__slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero__sub {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #f4f4f4;
+}
+
+.hero__button {
+  padding: 0.9rem 2rem;
+  background-color: #00aa55;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 20px 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.hero__button:hover {
+  background-color: #007a3d;
+  transform: scale(1.05);
+}
 .hero {
   /* background: url('/img/central__park-main-b.jpg.avif') center/cover no-repeat; */
   /* background-size: cover; */
@@ -167,7 +235,7 @@ body {
 }
 
 .intro__text {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: #333;
   line-height: 1.8;
   margin-bottom: 30px;
@@ -187,6 +255,120 @@ body {
   background-color: #004d00;
   transform: scale(1.05);
 }
+/* Writing styles for the Roadmap section */
+/* === Roadmap Section === */
+.roadmap {
+  background: linear-gradient(to bottom, #000000aa, #000000aa),
+    url("../img/betesta-1.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.roadmap__title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.roadmap__subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.roadmap__legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.roadmap__dot {
+  display: inline-block;
+  border: 2px solid #00cc66;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.roadmap__stop {
+  background-color: #00cc66;
+  border: 3px solid white;
+}
+
+.roadmap__timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  padding: 0 20px;
+  position: relative;
+}
+
+.roadmap__line {
+  position: relative;
+  /* padding: 0.3rem 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.roadmap__line:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+.roadmap__item {
+  background: white;
+  color: black;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  max-width: 48%;
+  width: 45%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+.roadmap__item h3 {
+  font-size: 1rem;
+}
+.roadmap__item p {
+  font-size: 0.9rem;
+  color: #555;
+}
+.roadmap__left {
+  align-self: flex-start;
+  margin-right: auto;
+  text-align: left;
+}
+
+.roadmap__right {
+  align-self: flex-end;
+  margin-left: auto;
+  text-align: left;
+}
+
+.roadmap__line .roadmap__dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  /* border: 3px solid white; */
+}
+.roadmap__pass {
+  background-color: white;
+  border: 3px solid #00cc66;
+}
+/* .roadmap__item.active {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
 /* .carousel__section {
   background-color: white;
   padding: 50px 0;
@@ -218,7 +400,7 @@ body {
   transition: opacity 1s ease-in-out;
   border-radius: 16px;
 } */
- .carousel__container {
+.carousel__container {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -269,7 +451,6 @@ body {
 .carousel__btn:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-
 
 .tours {
   background: white;
@@ -347,7 +528,7 @@ body {
   justify-content: space-between;
 }
 .about h2 {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 2.2rem;
   color: #006400;
   margin-bottom: 18px;
@@ -403,10 +584,11 @@ body {
   margin-bottom: 25px;
 }
 .explore h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 .video__block {
   margin-top: 20px;
+  padding: 50px;
 }
 
 .video__block img {
@@ -414,13 +596,27 @@ body {
   border-radius: 8px;
 }
 
-.video__block button {
+/* .video__block button {
   margin-top: 10px;
   padding: 10px;
   background: white;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+} */
+.video__iframe {
+  border-radius: 30px;
+  /* overflow: hidden; */
+  box-shadow: 0 10px 30px rgba(0, 100, 0, 0.3);
+  border: 2px solid white;
+  width: 100%;
+  /* height: 100%; */
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.video__iframe:hover {
+  transform: scale(1.02);
 }
 
 .review__section {
@@ -457,10 +653,10 @@ body {
   gap: 1.5rem;
   margin-top: 2rem;
 }
-.review__section{
-    border-radius: 20px;
-    /* margin: 35px 0; */
-    /* padding: 20px 0; */
+.review__section {
+  border-radius: 20px;
+  /* margin: 35px 0; */
+  /* padding: 20px 0; */
 }
 .review__card {
   display: flex;
@@ -498,6 +694,46 @@ body {
 .review__load-button:hover {
   background-color: #004b00;
 }
+
+/* Writing styles for the meeting section */
+.meetingPoint{
+  background: #d2f5d2;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+.meetingPoint__card{
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(42, 122, 226, 0.1);
+}
+.meetingPoint__card:hover{
+  box-shadow: 0 8px 24px rgba(42, 122, 226, 0.2);
+  transform: translateY(-4px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.meetingPoint p{
+  font-size: 1rem;
+  color: #006400;
+  margin-bottom: 10px;
+
+}
+.meetingPoint a {
+  font-size: 0.8rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 30px;
+
+}
+.meetingPoint a:hover {
+  color: #004d00;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
 /* Coding styles for the booking form of the website */
 .form__section {
   max-width: 500px;
@@ -543,6 +779,13 @@ body {
   white-space: nowrap;
   z-index: 1000;
 }
+.tour__Date {
+  text-align: start;
+  margin-bottom: 0;
+  margin-top: 20px;
+  position: relative;
+  
+}
 
 /* Simple enhancement for better UI on small screens */
 @media (max-width: 768px) {
@@ -577,14 +820,16 @@ select.form__input:focus {
 }
 
 .form__date::-webkit-calendar-picker-indicator {
-  filter: invert(29%) sepia(94%) saturate(457%) hue-rotate(87deg) brightness(90%) contrast(90%);
+  filter: invert(29%) sepia(94%) saturate(457%) hue-rotate(87deg)
+    brightness(90%) contrast(90%);
   cursor: pointer;
 }
-.tour__Date{
+.tour__Date {
   text-align: start;
   margin-bottom: 0;
   margin-top: 20px;
   color: #ccc;
+  
 }
 .form__textarea {
   height: 100px;
@@ -648,41 +893,41 @@ select.form__input:focus {
   padding: 20px;
 }
 .footer p {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 /* Mobile styles */
 @media (max-width: 768px) {
   .hamburger {
-  display: flex;
-  width: 30px;
-  height: 17px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1100;
-}
+    display: flex;
+    width: 30px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1100;
+  }
 
-.hamburger span {
-  display: block;
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-  transition: 0.3s;
-}
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
 
-/* Optional: change to X when open */
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
+  /* Optional: change to X when open */
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
-.hamburger.open span:nth-child(2) {
-  transform: rotate(-45deg) translate(4px, -4px);
-}
+  .hamburger.open span:nth-child(2) {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
 
   .header__nav {
     position: fixed;
@@ -707,7 +952,7 @@ select.form__input:focus {
     color: white;
     font-size: 1rem;
   }
-  #header__nav-id{
+  #header__nav-id {
     position: fixed;
     top: 0;
     left: -100%;
@@ -721,31 +966,93 @@ select.form__input:focus {
     z-index: 1000;
     margin-top: 0;
   }
-  #header__nav-id.open{
+  #header__nav-id.open {
     left: 0;
   }
-  #header__nav-id a{
+  #header__nav-id a {
     color: white;
     padding: 1rem 0;
     text-decoration: none;
     font-weight: 500;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
+
+  .roadmap__timeline {
+    border-right: none;
+    padding-left: 0;
+  }
+  .roadmap__line {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    position: relative;
+  }
+  .roadmap__item {
+    width: 85%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .roadmap__dot {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 0; */
+    /* transform: translate(-50%, -50%); */
+    /* margin-left: 10px; */
+
+  }
+  .roadmap__right{
+    align-self: center;
+    text-align: left;
+  }
+  .roadmap__left {
+    align-self: center;
+    text-align: left;
+  }
+  .roadmap__line .roadmap__dot {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-left: 10px;
+  }
 }
 /* ✅ Responsive for small screens */
 @media screen and (max-width: 600px) {
   .top__bar {
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
   }
-
-  .top__bar-right {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+  .top__bar-left span i{
+    font-size: 0.4rem;
   }
-
+  .top__bar-right {
+    display: flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+  }
+  .intro__title{
+    font-size: 1.8rem;
+  }
+  .intro__text {
+    font-size: 1rem;
+  }
   /* .top__bar-right img {
     width: 32px;
     height: 32px;
   } */
+   .tour__card {
+    padding: 20px 0;
+   }
+   .tour__card img{
+    width: 250px;
+    height: 350px;
+   }
+  .tour__Date{
+    top: 55px;
+    left: 20px;
+    color: var(--secondary);
+  }
 }

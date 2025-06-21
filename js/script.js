@@ -1,20 +1,21 @@
 // Writing code for making header sticky
-const header = document.querySelector('.header');
-const nav = document.querySelector('.header__nav');
-const navContainer = document.querySelector('.container');
+const header = document.querySelector(".header");
+const nav = document.querySelector(".header__nav");
+const navContainer = document.querySelector(".container");
 
-const stickyObserver = new IntersectionObserver(([entry]) => {
+const stickyObserver = new IntersectionObserver(
+  ([entry]) => {
     if (!entry.isIntersecting) {
-        navContainer.classList.add('sticky');
+      navContainer.classList.add("sticky");
     } else {
-        navContainer.classList.remove('sticky');
-    };
-},
-{
+      navContainer.classList.remove("sticky");
+    }
+  },
+  {
     root: null,
     threshold: 0,
-    rootMargin: '-1px'
-}
+    rootMargin: "-1px",
+  }
 );
 stickyObserver.observe(header);
 
@@ -22,18 +23,29 @@ stickyObserver.observe(header);
 const hamburger = document.getElementById("hamburger");
 
 hamburger.addEventListener("click", () => {
-
   hamburger.classList.toggle("open");
   nav.classList.toggle("open");
 });
 
-// Writing JS code for the carusoul 
-const track = document.getElementById('carouselTrack');
-const prevBtn = document.querySelector('.carousel__btn--prev');
-const nextBtn = document.querySelector('.carousel__btn--next');
+// Functioning the main bg slider
+document.addEventListener("DOMContentLoaded", () => {
+  const heroSlides = document.querySelectorAll(".hero__slide");
+  let heroIndex = 0;
+
+  setInterval(() => {
+    heroSlides[heroIndex].classList.remove("active");
+    heroIndex = (heroIndex + 1) % heroSlides.length;
+    heroSlides[heroIndex].classList.add("active");
+  }, 5000); // Slide every 5 seconds
+});
+
+// Writing JS code for the carusoul
+const track = document.getElementById("carouselTrack");
+const prevBtn = document.querySelector(".carousel__btn--prev");
+const nextBtn = document.querySelector(".carousel__btn--next");
 
 let currentIndex = 0;
-const slides = document.querySelectorAll('.carousel__item');
+const slides = document.querySelectorAll(".carousel__item");
 const totalSlides = slides.length;
 
 function updateCarousel() {
@@ -41,12 +53,12 @@ function updateCarousel() {
   track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % totalSlides;
   updateCarousel();
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
   updateCarousel();
 });
@@ -56,8 +68,6 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % totalSlides;
   updateCarousel();
 }, 6000);
-
-
 
 // Basic script for Pedicap
 document.addEventListener("DOMContentLoaded", function () {
@@ -110,7 +120,7 @@ const reviews = [
     name: "Alina S.",
     stars: 5,
     text: "Felt like I was in a movie! The guide was funny, the route was scenic, and the whole thing just made Central Park feel extra magical. Highly recommend.",
-  }
+  },
   // Add more reviews here
 ];
 
@@ -149,22 +159,24 @@ document
   .querySelector(".form__container")
   .addEventListener("submit", function (e) {
     // e.preventDefault();
-      setTimeout(() => {
-        alert("We have received your info! Check your email confirmation.");
+    setTimeout(() => {
+      alert("We have received your info! Check your email confirmation.");
     }, 1000); // Let the form submit first
-}); 
-    
-    // const div = document.createElement("div");
-    // div.innerHTML = `
-    // <div>We have recieved your information, and we'll contact you as soon as possible !</div>
-    // `;
+  });
 
-// Writing code for the TourButton 
-const tourButton = document.querySelectorAll('.tour__card-button');
-const contactSection = document.getElementById('contact');
+// const div = document.createElement("div");
+// div.innerHTML = `
+// <div>We have recieved your information, and we'll contact you as soon as possible !</div>
+// `;
 
-tourButton.forEach(element => {
-    element.addEventListener('click', function() {
-        contactSection.scrollIntoView({behavior: 'smooth'});
-    });
+// Writing code for the TourButton
+const tourButton = document.querySelectorAll(".tour__card-button");
+const contactSection = document.getElementById("contact");
+
+tourButton.forEach((element) => {
+  element.addEventListener("click", function () {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  });
 });
+
+// Animating the Roadmap section

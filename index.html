@@ -1,168 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WanderWay</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logotype first try.svg" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderWay</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/logotype first try.svg"
+      type="image/x-icon"
+    />
 
-   <!-- Top bar for the website  -->
+    <!-- Connecting the CSS files for the styles -->
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top bar for the website  -->
     <!-- Top Info Bar -->
     <div class="top__bar">
-        <div class="top__bar-left">
-            <span><i class="fas fa-phone-alt"></i>📲 +1 213-709-5924</span>
-            <span>|</span>
-            <span><i class="fas fa-envelope"></i>✉️ samin.2409@gmail.com</span>
+      <div class="top__bar-left">
+        <span><i class="fas fa-phone-alt"></i>📲 +1 213-709-5924</span>
+        <span>|</span>
+        <span
+          ><i class="fas fa-envelope"></i>✉️ wanderway06042025@gmail.com</span
+        >
+      </div>
+      <div class="top__bar-right">
+        <a href=""
+          ><i class="fab fa-whatsapp"
+            ><img src="./img/whatsapp.png" alt="WhatsApp" /></i
+        ></a>
+        <span>|</span>
+        <a href="https://www.tiktok.com/@one_wander_way?_t=ZT-8wwAELjbuaE&_r=1"
+          ><i class="fab fa-facebook-f"
+            ><img src="./img/tiktok.png" alt="TikTok" /></i
+        ></a>
+        <span>|</span>
+        <a
+          href="https://www.instagram.com/boyofcentralpark?igsh=OTdjemlkejBxcHp0&utm_source=qr"
+          ><i class="fab fa-instagram"
+            ><img src="./img/instagram.png" alt="Instagram" /></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <img
+            class="header__logo-image"
+            src="./img/logo_white 1.png"
+            alt="Logotype"
+          />
         </div>
-        <div class="top__bar-right">
-            <a href=""><i class="fab fa-whatsapp"><img src="./img/whatsapp.png" alt="WhatsApp"></i></a>
-            <span>|</span>
-            <a href="https://www.tiktok.com/@one_wander_way?_t=ZT-8wwAELjbuaE&_r=1"><i class="fab fa-facebook-f"><img src="./img/tiktok.png" alt="TikTok"></i></a>
-            <span>|</span>
-            <a href="https://www.instagram.com/boyofcentralpark?igsh=OTdjemlkejBxcHp0&utm_source=qr"><i class="fab fa-instagram"><img src="./img/instagram.png" alt="Instagram"></i></a>
+        <nav class="header__nav" id="header__nav-id">
+          <a href="#home">Home</a>
+          <a href="#tours">Tours</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
         </div>
-    </div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="header__logo">
-        <img class="header__logo-image" src="./img/logotype first try.svg" alt="Logotype">
       </div>
-      <nav class="header__nav" id="header__nav-id">
-        <a href="#home">Home</a>
-        <a href="#tours">Tours</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    </header>
 
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero__slider">
+        <div
+          class="hero__slide active"
+          style="background-image: url('./img/central__park-main-b.jpg.avif')"
+        ></div>
+        <div
+          class="hero__slide"
+          style="background-image: url('./img/betesta-1.jpg')"
+        ></div>
+        <div
+          class="hero__slide"
+          style="background-image: url('./img/homeBridge-1.jpg')"
+        ></div>
       </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <img class="hero__main-bg" src="./img/central__park-main-b.jpg.avif" alt="Bg">
-    <h1 class="hero__title">“Lose yourself in the magic of every turn.”</h1>
-  </section>
-
-  <!-- Intro section coding -->
-   <section class="intro" id="intro">
-    <div class="intro__content">
-      <h2 class="intro__title">Discover Central Park with Us</h2>
-      <p class="intro__text">
-        At WanderWay, we don’t just offer rides — we create unforgettable moments in the heart of New York City.
-        Our guided Pedicab tours take you on a relaxing journey through the beauty and history of Central Park,
-        with four iconic stops every visitor should experience:
-        <strong>Bethesda Fountain</strong>, <strong>Friends Fountain</strong>,
-        <strong>the famous Home Alone 2 bridge</strong>, and the peaceful
-        <strong>John Lennon Memorial at Strawberry Fields</strong>.
-      </p>
-      <a href="#tours" class="intro__button">See Tours</a>
-
-      <div class="carousel__container">
-        <div class="carousel__track" id="carouselTrack">
-          <div class="carousel__item"><img src="./img/betesta-1.jpg" alt="Bethesda Fountain" /></div>
-          <div class="carousel__item"><img src="./img/IMG_0587.PNG" alt="John Lennon Memorial" /></div>
-          <div class="carousel__item"><img src="./img/IMG_9312.PNG" alt="John Lennon Memorial" /></div>
-          <div class="carousel__item"><img src="./img/friends__fountain-1.jpg" alt="Friends Fountain" /></div>
-          <div class="carousel__item"><img src="./img/homeBridge-1.jpg" alt="Home Alone 2 Bridge" /></div>
-          <div class="carousel__item"><img src="./img/lenonMem1.jpg" alt="John Lennon Memorial" /></div>
+      <div class="hero__overlay">
+        <div class="hero__content">
+          <h1 class="hero__headline">
+            “Lose yourself in the magic of every turn.”
+          </h1>
+          <p class="hero__sub">
+            Explore Central Park with our friendly Pedicab Tours
+          </p>
+          <a href="#tours" class="hero__button">Book Your Tour</a>
         </div>
-
-        <button class="carousel__btn carousel__btn--prev">&#10094;</button>
-        <button class="carousel__btn carousel__btn--next">&#10095;</button>
       </div>
-    </div>
-  </section>
-
-  <!-- Tours Section -->
-  <section class="tours" id="tours">
-    <h2 class="tours__title">Central Park <span>PEDICAB</span> Guided Tours</h2>
-    <div class="tour__grid">
-      <div class="tour__card">
-        <img src="./img/pedicab__1-image.jpg" alt="Tour 1">
-        <h3>Basic Tour</h3>
-        <p class="tour__duration">30 min / 1 Stop</p>
-        <!-- <p class="tour__location">Betesta fountain</p> -->
-        <p class = "tour__card-price"><span>$35</span> per person</p>
-        <button class = "tour__card-button">Book Now</button>
-      </div>
-      <div class="tour__card">
-        <img src="./img/IMG_9266.JPG" alt="Tour 1">
-        <h3>Economy Tour</h3>
-        <p class="tour__duration">40 min / 2 Stops</p>
-        <p class = "tour__card-price"><span>$50</span> per person</p>
-        <button class = "tour__card-button">Book Now</button>
-      </div>
-      <div class="tour__card">
-        <img src="./img/IMG_9268.JPG" alt="Tour 1">
-        <h3>Classic Tour</h3>
-        <p class="tour__duration">50 min / 3 Stops</p>
-        <p class = "tour__card-price"><span>$65</span> per person</p>
-        <button class = "tour__card-button">Book Now</button>
-      </div>
-      <div class="tour__card">
-        <img src="./img/IMG_9267.webp" alt="Tour 1">
-        <h3>Deluxe Tour</h3>
-        <p class="tour__duration">60 min / 4 Stops</p>
-        <p class = "tour__card-price"><span>$75</span> per person</p>
-        <button class = "tour__card-button">Book Now</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <h2>Welcome to Our Pedicab Tours</h2>
-      <!-- <p>We offer guided pedicap tours with friendly drivers and unforgettable city views.</p> -->
-      <div class="about__features">
-        <div>✅ Local Knowledge</div>
-        <div>✅ Comfortable Rides</div>
-        <div>✅ Personalized Experiences</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Explore Section -->
-  <section class="explore">
-    <h2>Explore the City</h2>
-    <div class="video__block">
-      <iframe width="80%" height="600px" src="https://www.youtube.com/embed/nxK-ina9Jzg?si=UlEbTGFnR85TsAd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <!-- <button>▶</button> -->
-    </div>
-  </section>
-
-  <!-- Reviews Section -->
-  <section class="review__section" id="reviews">
-        <h2 class="review__title">What <span>People Say About Us</span></h2>
-        <div class="review__rating">
-            <span>5.0</span>
-            <div class="stars">★★★★★</div>
-            <span>(1,326)</span>
-        </div>
-
-        <div id="reviewContainer" class="review__container">
-            <!-- Reviews will be loaded here -->
-        </div>
-
-        <button id="loadMoreBtn" class="review__load-button">Load More Reviews</button>
     </section>
 
-  <!-- Contact/Booking Section -->
-  <!-- <section class="form__section">
+    <!-- Intro section coding -->
+    <section class="intro" id="intro">
+      <div class="intro__content">
+        <h2 class="intro__title">Discover Central Park with Us</h2>
+        <p class="intro__text">
+          At WanderWay, we don’t just offer rides — we create unforgettable
+          moments in the heart of New York City. Our guided Pedicab tours take
+          you on a relaxing journey through the beauty and history of Central
+          Park, with four iconic stops every visitor should experience:
+          <strong>Bethesda Fountain</strong>, <strong>Friends Fountain</strong>,
+          <strong>the famous Home Alone 2 bridge</strong>, and the peaceful
+          <strong>John Lennon Memorial at Strawberry Fields</strong>.
+        </p>
+        <a href="#tours" class="intro__button">See Tours</a>
+
+        <div class="carousel__container">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="carousel__item">
+              <img src="./img/betesta-1.jpg" alt="Bethesda Fountain" />
+            </div>
+            <div class="carousel__item">
+              <img src="./img/IMG_0587.PNG" alt="John Lennon Memorial" />
+            </div>
+            <div class="carousel__item">
+              <img src="./img/IMG_9312.PNG" alt="John Lennon Memorial" />
+            </div>
+            <div class="carousel__item">
+              <img src="./img/friends__fountain-1.jpg" alt="Friends Fountain" />
+            </div>
+            <div class="carousel__item">
+              <img src="./img/homeBridge-1.jpg" alt="Home Alone 2 Bridge" />
+            </div>
+            <div class="carousel__item">
+              <img src="./img/lenonMem1.jpg" alt="John Lennon Memorial" />
+            </div>
+          </div>
+
+          <button class="carousel__btn carousel__btn--prev">&#10094;</button>
+          <button class="carousel__btn carousel__btn--next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap">
+      <h2 class="roadmap__title">Itinerary</h2>
+      <p class="roadmap__subtitle">(Based on 1 Hour Tour)</p>
+      <div class="roadmap__legend">
+        <span><span class="roadmap__dot roadmap__stop"></span> Stop</span>
+        <span><span class="roadmap__dot roadmap__pass"></span> Pass By</span>
+      </div>
+      <div class="roadmap__timeline">
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Starting point: (60 Minutes)</h3>
+            <p>
+              764 Doris C Freedman PI, New York, NY 10019 (in front of William
+              Sherman Monument)
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Wollman Rink (Pass By)</h3>
+            <p>From movies Serendipity, Rayn-o-Nyle, Home Alone</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Chess House (Pass By)</h3>
+            <p>
+              Constructed in 1952. Circling the house are 24 tables for chess
+              and checkers
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>The Carousel (Pass By)</h3>
+            <p>Oldest carousel in the city, from 1908</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>The Dairy (Pass By)</h3>
+            <p>From movie Serendipity, Enchanted</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Gapstow Bridge (3 Minutes)</h3>
+            <p>From movie Home Alone. Bridge from 1986</p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>The Pond (Pass By)</h3>
+            <p>From movies Home Alone, King Kong, Jersey Girl</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Central Park Zoo (Pass By)</h3>
+            <p>From movie Madagascar, Mr Popper's Penguins</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Statue Balto (Pass By)</h3>
+            <p>National hero, From movie Balto. Statue from 1925</p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Rumsey Playfield (Pass By)</h3>
+            <p>Good Morning America Show Summer Stage</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Conservatory Water (Pass By)</h3>
+            <p>From movie Stuart little</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Loeb Boathouse Restaurant (Pass By)</h3>
+            <p>From movies Sex In The City, 27 Dresses</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>The Mall (Pass By)</h3>
+            <p>From movie Made in Manhattan</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Bethesda Fountain - Bethesda Terrace (10 Minutes)</h3>
+            <p>
+              From movies Gossip Girls, Home alone, Elf ,Spider Man, Law and
+              Order, 27 Dresses. Avengers
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Cherry Hill Fountain (Pass By)</h3>
+            <p>Designed by Jacob Wrey Mould in the 1860s</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>The Lake (Pass By)</h3>
+            <p>
+              The 18-acre lake, known simply as "the Lake" is the largest
+              man-made body of water in the park
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Bow Bridge (6 Minutes)</h3>
+            <p>Completed 1862</p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>The Falconer Statue (Pass By)</h3>
+            <p>
+              This elegant bronze statue is the work of British sculptor George
+              Blackall Simonds
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Daniel Webster (Pass by)</h3>
+            <p>One of the most famous orators and politician</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Strawberry Fields (7 Minutes)</h3>
+            <p>
+              Strawberry Fields was inaugurated on what would have been Lennon's
+              45th birthday, 9 October 1985
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>The Dakota (Pass by)</h3>
+            <p>One of the first buildings on upper west side from 1884s</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>The Pond (Pass By)</h3>
+            <p>From movies Home Alone, King Kong, Jersey Girl</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Sheep Meadow (Pass by)</h3>
+            <p>
+              A 15 acre pasture, originally designated in 1864 by Olmsted and
+              Vaux as a grazing area for 200 sheep
+            </p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__right animate__fade-in">
+            <h3>Tavern on the green (Pass by)</h3>
+            <p>From movie Ghost Busters</p>
+          </div>
+          <div class="roadmap__dot roadmap__pass"></div>
+        </div>
+        <div class="roadmap__line">
+          <div class="roadmap__item roadmap__left animate__fade-in">
+            <h3>Drop-off</h3>
+            <p>Same as a meeting point</p>
+          </div>
+          <div class="roadmap__dot roadmap__stop"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours" id="tours">
+      <h2 class="tours__title">
+        Central Park <span>PEDICAB</span> Guided Tours
+      </h2>
+      <div class="tour__grid">
+        <div class="tour__card">
+          <img src="./img/pedicab__1-image.jpg" alt="Tour 1" />
+          <h3>Basic Tour</h3>
+          <p class="tour__duration">30 min / 1 Stop</p>
+          <!-- <p class="tour__location">Betesta fountain</p> -->
+          <p class="tour__card-price"><span>$50</span> <br>+$10 each additional person</p>
+          <button class="tour__card-button">Book Now</button>
+        </div>
+        <div class="tour__card">
+          <img src="./img/IMG_9266.JPG" alt="Tour 1" />
+          <h3>Economy Tour</h3>
+          <p class="tour__duration">40 min / 2 Stops</p>
+          <p class="tour__card-price"><span>$60</span> <br>+$15 each additional person</p>
+          <button class="tour__card-button">Book Now</button>
+        </div>
+        <div class="tour__card">
+          <img src="./img/IMG_9268.JPG" alt="Tour 1" />
+          <h3>Classic Tour</h3>
+          <p class="tour__duration">50 min / 3 Stops</p>
+          <p class="tour__card-price"><span>$70</span> <br>+$20 each additional person</p>
+          <button class="tour__card-button">Book Now</button>
+        </div>
+        <div class="tour__card">
+          <img src="./img/IMG_9267.webp" alt="Tour 1" />
+          <h3>Deluxe Tour</h3>
+          <p class="tour__duration">60 min / 4 Stops</p>
+          <p class="tour__card-price"><span>$80</span> <br>+$25 each additional person</p>
+          <button class="tour__card-button">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>Welcome to Our Pedicab Tours</h2>
+        <!-- <p>We offer guided pedicap tours with friendly drivers and unforgettable city views.</p> -->
+        <div class="about__features">
+          <div>✅ Local Knowledge</div>
+          <div>✅ Comfortable Rides</div>
+          <div>✅ Personalized Experiences</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+      <h2>Explore the Park</h2>
+      <div class="video__block">
+        <iframe
+          class="video__iframe"
+          width="80%"
+          height="600px"
+          src="https://www.youtube.com/embed/nxK-ina9Jzg?si=UlEbTGFnR85TsAd4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <!-- <button>▶</button> -->
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="review__section" id="reviews">
+      <h2 class="review__title">What <span>People Say About Us</span></h2>
+      <div class="review__rating">
+        <span>5.0</span>
+        <div class="stars">★★★★★</div>
+        <span>(1,326)</span>
+      </div>
+
+      <div id="reviewContainer" class="review__container">
+        <!-- Reviews will be loaded here -->
+      </div>
+
+      <button id="loadMoreBtn" class="review__load-button">
+        Load More Reviews
+      </button>
+    </section>
+
+    <!-- Contact/Booking Section -->
+    <!-- <section class="form__section">
   <h2 class="form__title">Book a Tour</h2>
   <form action="https://formsubmit.co/samin.2409@mail.ru" method="POST" class="form__container">
 
@@ -180,75 +470,143 @@
   </form>
 </section> -->
 
-    <section class="form__section" id="contact">
-        <h2 class="form__title">Book a Tour</h2>
-        <form action="https://formsubmit.co/sergg.2409@gmail.com" method="POST" class="form__container">
-            
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="box">
-            <input type="hidden" name="_subject" value="New Pedicab Booking Request">
-
-            <!-- The key line -->
-             <input type="hidden" name="_next" value="https://wanderway.github.io/thankYou.html">
-
-
-            <input type="text" name="Full Name" placeholder="Your Full Name" class="form__input" required>
-
-            <input type="tel" name="Phone Number" placeholder="Your Phone Number" class="form__input" required>
-
-            <!-- Tour Type Selector -->
-            <label for="tourType" class="tour__Date">Choose a Tour</label>
-            <select name="Tour Type" id="tourType" class="form__input tour__select" required>
-              <option value="">-- Select a Tour --</option>
-              <option title="30 min / 1 Stop • $35 (Bethesda Fountain)">Basic Tour</option>
-              <option title="40 min / 2 Stops • $50 (Bethesda Fountain, Friends Fountain)">Economy Tour</option>
-              <option title="50 min / 3 Stops • $65 (Add Home Alone Bridge)">Classic Tour</option>
-              <option title="60 min / 4 Stops • $75 (Full tour including John Lennon Memorial)">Deluxe Tour</option>
-            </select>
-            <input type="number" name="Number" placeholder="Number of Guests" class="form__input" required>
-
-            <!-- Date (Calendar) -->
-            <label class="tour__Date" for="tourDate">Choose a date</label>
-            <input type="date" id="tourDate" name="Tour Date" class="form__input" required>
-
-
-            <!-- Time Selector -->
-            <select name="Tour Time" class="form__input" required>
-              <option value="">-- Choose Preferred Time --</option>
-              <option>06:00 AM</option>
-              <option>07:00 AM</option>
-              <option>08:00 AM</option>
-              <option>09:00 AM</option>
-              <option>10:00 AM</option>
-              <option>11:00 AM</option>
-              <option>12:00 PM</option>
-              <option>01:00 PM</option>
-              <option>02:00 PM</option>
-              <option>03:00 PM</option>
-              <option>04:00 PM</option>
-              <option>05:00 PM</option>
-              <option>06:00 PM</option>
-              <option>07:00 PM</option>
-              <option>08:00 PM</option>
-              <option>09:00 PM</option>
-              <option>10:00 PM</option>
-            </select>
-
-            <textarea name="Special Requests" placeholder="Special requests..." class="form__textarea"></textarea>
-
-            <button type="submit" class="form__button">Send Request</button>
-        </form>
+    <!-- Meeting Point -->
+    <section class="meetingPoint">
+      <h2 class="meetingPoint-title intro__title">Meeting Point</h2>
+      <div class="meetingPoint__card">
+        <p>
+          764 Doris C Freedman PI, New York, NY 10019 (in front of William
+          Sherman Monument)
+        </p>
+        <a
+          href="https://maps.app.goo.gl/bMm2fPxTg7XrCiqq9?g_st=com.google.maps.preview.copy"
+        >
+          Open in Google Maps
+        </a>
+      </div>
     </section>
 
+    <section class="form__section" id="contact">
+      <h2 class="form__title">Book a Tour</h2>
+      <form
+        action="https://formsubmit.co/sergg.2409@gmail.com"
+        method="POST"
+        class="form__container"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Pedicab Booking Request"
+        />
 
+        <!-- The key line -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://wanderway.github.io/thankYou.html"
+        />
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 WanderWay. All rights reserved.</p>
-    </div>
-  </footer>
+        <input
+          type="text"
+          name="Full Name"
+          placeholder="Your Full Name"
+          class="form__input"
+          required
+        />
 
-  <script src="./js/script.js"></script>
-</body>
+        <input
+          type="tel"
+          name="Phone Number"
+          placeholder="Your Phone Number"
+          class="form__input"
+          required
+        />
+
+        <!-- Tour Type Selector -->
+        <!-- <label for="tourType" class="tour__Date">Choose a Tour</label> -->
+        <select
+          name="Tour Type"
+          id="tourType"
+          class="form__input tour__select"
+          required
+        >
+          <option value="">-- Select a Tour --</option>
+          <option title="30 min / 1 Stop • $35 (Bethesda Fountain)">
+            Basic Tour
+          </option>
+          <option
+            title="40 min / 2 Stops • $50 (Bethesda Fountain, Friends Fountain)"
+          >
+            Economy Tour
+          </option>
+          <option title="50 min / 3 Stops • $65 (Add Home Alone Bridge)">
+            Classic Tour
+          </option>
+          <option
+            title="60 min / 4 Stops • $75 (Full tour including John Lennon Memorial)"
+          >
+            Deluxe Tour
+          </option>
+        </select>
+        <input
+          type="number"
+          name="Number"
+          placeholder="Number of Guests"
+          class="form__input"
+          required
+        />
+
+        <!-- Date (Calendar) -->
+        <label class="tour__Date" for="tourDate">Choose a date</label>
+        <input
+          type="date"
+          id="tourDate"
+          name="Tour Date"
+          class="form__input"
+          required
+        />
+
+        <!-- Time Selector -->
+        <select name="Tour Time" class="form__input" required>
+          <option value="">-- Choose Preferred Time --</option>
+          <option>06:00 AM</option>
+          <option>07:00 AM</option>
+          <option>08:00 AM</option>
+          <option>09:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>12:00 PM</option>
+          <option>01:00 PM</option>
+          <option>02:00 PM</option>
+          <option>03:00 PM</option>
+          <option>04:00 PM</option>
+          <option>05:00 PM</option>
+          <option>06:00 PM</option>
+          <option>07:00 PM</option>
+          <option>08:00 PM</option>
+          <option>09:00 PM</option>
+          <option>10:00 PM</option>
+        </select>
+
+        <textarea
+          name="Special Requests"
+          placeholder="Special requests..."
+          class="form__textarea"
+        ></textarea>
+
+        <button type="submit" class="form__button">Send Request</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 WanderWay. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
