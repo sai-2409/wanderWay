@@ -160,7 +160,7 @@ document
   .addEventListener("submit", function (e) {
     // e.preventDefault();
     setTimeout(() => {
-      alert("We have received your info! Check your email confirmation.");
+      alert("We have received your information! We will contact with you as soon as possible.");
     }, 1000); // Let the form submit first
   });
 
