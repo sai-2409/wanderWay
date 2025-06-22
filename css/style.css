@@ -1001,6 +1001,7 @@ select.form__input:focus {
     box-shadow: none;
     border-radius: 8px;
     margin-bottom: 15px;
+    margin-left: 20px;
   }
   .roadmap__dot {
     /* position: absolute; */
@@ -1035,9 +1036,9 @@ select.form__input:focus {
     font-size: 0.4rem;
   }
   .top__bar-right {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
     overflow: hidden;
   }
   .intro__title{
@@ -1060,7 +1061,7 @@ select.form__input:focus {
   .tour__Date{
     top: 40px;
     left: 30px;
-    color: var(--secondary);
+    color: var(--gray);
   }
   .about .container{
     display: block;
