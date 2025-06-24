@@ -180,3 +180,19 @@ tourButton.forEach((element) => {
 });
 
 // Animating the Roadmap section
+const roadmapImages = document.querySelectorAll(".roadmap__image");
+
+const imageObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+roadmapImages.forEach((img) => imageObserver.observe(img));
